@@ -6,8 +6,9 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 group :development, :test do
-gem 'pry'
+  gem 'pry'
   gem 'rspec-rails'
+  gem 'factory_bot_rails'
 end
 
 group :test do
