@@ -12,7 +12,7 @@ RSpec.describe BankAccountsController, type: :controller do
 
   describe "GET #index" do
     it "returns a success response" do
-      bank_account = @user.bank_accounts.create! valid_attributes
+      bank_account = FactoryBot.create(:bank_account, user: @user)
       get :index
       expect(response).to be_success
     end
@@ -108,5 +108,3 @@ RSpec.describe BankAccountsController, type: :controller do
       end
     end
   end
-
-end
